@@ -22,6 +22,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 ### Links
 
 - Solution URL: https://github.com/ThomasH2001/FAQ-Accordion
+- Live Site URL: https://thomash2001.github.io/FAQ-Accordion/
 
 ## My process
 
@@ -40,8 +41,8 @@ I learned about the details and summary elements and about CSS attribute selecto
 
 ### Useful resources
 
-- [<details>: The Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
-- [<summary>: The Disclosure Summary element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)
+- [<details\>: The Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+- [<summary\>: The Disclosure Summary element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)
 - [Attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 
 ## Author
