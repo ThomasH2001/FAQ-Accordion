@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    font-family: "Work Sans";
+    font-size: 16px;
+    color: hsl(292, 42%, 14%);
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 347px;
+}
+
+body::before {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 232px;
+    width: 100%;
+    z-index: -1;
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    width: 327px;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 32px 24px 0;
+}
+
+img {
+    float: left;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: 17px;
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 0 7px 49px;
+}
+
+details:not(details:last-child) {
+    border-bottom: 2px solid hsl(275, 100%, 97%);
+}
+
+summary {
+    display: block;
+    padding: 22px 0;
+    font-weight: 600;
+}
+
+summary:hover {
+    cursor: pointer;
+    color: hotpink;
+}
+
+span {
+    float: right;
+    background-image: url("./assets/images/icon-plus.svg");
+    width: 30px;
+    height: 31px;
+}
+
+details[open] span {
+    background-image: url("./assets/images/icon-minus.svg");
+}
+
+p {
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+    padding: 5px 0 22px;
+}
+
+@media (min-width: 620px) {
+    body::before {
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+        height: 320px;
+    }
+
+    main {
+        width: 600px;
+        padding: 54px 41px 0;
+    }
+
+    img {
+        width: 38px;
+        height: 38px;
+        top: 30px;
+    }
+    
+    h1 {
+        font-size: 49px;
+        padding: 0 0 11px 68px;
+    }
+
+    summary {
+        padding: 31px 0;
+    }
+
+    span {
+        transform: translateY(-6px) !important;
+    }
+
+    details:last-child span {
+        transform: translateY(4px) !important;
+    }
+
+    p {
+        padding: 5px 0 31px;
+    }
+}
